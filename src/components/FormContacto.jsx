@@ -14,7 +14,7 @@ export default function FormContacto() {
       e.stopPropagation();
       Swal.fire({
         icon: "success",
-        title: "Mensaje enviado con éxito",
+        title: "datos enviados",
         showConfirmButton: false,
         timer: 2000,
       });
@@ -24,7 +24,7 @@ export default function FormContacto() {
       setValidated(true);
       Swal.fire({
         icon: "error",
-        title: "No se pudo enviar el mensaje",
+        title: "No se pudo enviar el mensaje. Completar todos los datos",
       });
     }
   };
